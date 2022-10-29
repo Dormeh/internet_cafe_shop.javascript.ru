@@ -32,7 +32,7 @@ export default class Main {
     let cartIconHolder = document.querySelector('[data-cart-icon-holder]');
     cartIconHolder.append(this.cartIcon.elem);
     this.cart = new Cart(this.cartIcon);
-    let response = await fetch('products.json');
+    let response = await fetch('./docs/products.json');
     if (response.ok) {
       //console.log(response.status);
       let products = await response.json();

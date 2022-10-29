@@ -1,7 +1,7 @@
 export default class ProductCard {
   constructor(product) {
     this._product = product;
-    this.link = '../assets/images/products/';
+    this.link = './assets/images/products/';
     this.elem = document.createElement('div');
     this.elem.className = 'card';
     this.renderTop(product);
@@ -27,7 +27,7 @@ export default class ProductCard {
     elemBody.className = 'card__body';
     elemBody.innerHTML += '<div class="card__title">' + product.name + '</div>' +
       '<button type="button" class="card__button">' +
-      '<img src="../assets/images/icons/plus-icon.svg" alt="icon">' +
+      '<img src="./assets/images/icons/plus-icon.svg" alt="icon">' +
       '</button>';
   }
   onClick() {

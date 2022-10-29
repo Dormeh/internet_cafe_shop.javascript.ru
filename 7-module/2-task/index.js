@@ -16,7 +16,7 @@ export default class Modal {
     this.header.className = 'modal__header';
     this.buttonClose = document.createElement('button');
     this.buttonClose.className = 'modal__close';
-    this.buttonClose.innerHTML += '<img src="../../assets/images/icons/cross-icon.svg" alt="close-icon" />';
+    this.buttonClose.innerHTML += '<img src="./assets/images/icons/cross-icon.svg" alt="close-icon" />';
     this.titleTag = document.createElement('h3');
     this.titleTag.className = 'modal__title';
     this.body = document.createElement('div');
