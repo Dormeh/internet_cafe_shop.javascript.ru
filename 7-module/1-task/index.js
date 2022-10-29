@@ -13,8 +13,8 @@ export default class RibbonMenu {
     this.buttonRight = document.createElement('button');
     this.buttonLeft.className = 'ribbon__arrow ribbon__arrow_left';
     this.buttonRight.className = 'ribbon__arrow ribbon__arrow_right ribbon__arrow_visible';
-    this.buttonLeft.innerHTML += '<img src="../../assets/images/icons/angle-icon.svg" alt="icon">';
-    this.buttonRight.innerHTML += '<img src="../../assets/images/icons/angle-icon.svg" alt="icon">';
+    this.buttonLeft.innerHTML += '<img src="../assets/images/icons/angle-icon.svg" alt="icon">';
+    this.buttonRight.innerHTML += '<img src="../assets/images/icons/angle-icon.svg" alt="icon">';
     this.navCat = document.createElement('nav');
     this.navCat.className = 'ribbon__inner';
     this.elem.append(this.buttonRight);

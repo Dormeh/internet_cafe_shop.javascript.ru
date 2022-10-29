@@ -15,8 +15,8 @@ export default class Carousel {
     this.buttonRight = document.createElement('div');
     this.buttonLeft.className = 'carousel__arrow carousel__arrow_left';
     this.buttonRight.className = 'carousel__arrow carousel__arrow_right';
-    this.buttonLeft.innerHTML += '<img src="../../assets/images/icons/angle-left-icon.svg" alt="icon">';
-    this.buttonRight.innerHTML += '<img src="../../assets/images/icons/angle-icon.svg" alt="icon">';
+    this.buttonLeft.innerHTML += '<img src="../assets/images/icons/angle-left-icon.svg" alt="icon">';
+    this.buttonRight.innerHTML += '<img src="../assets/images/icons/angle-icon.svg" alt="icon">';
     this.elem.append(this.buttonRight);
     this.elem.append(this.buttonLeft);
   }
@@ -26,12 +26,12 @@ export default class Carousel {
     this.elem.append(this.carouselInner);
     for (let slideEl of this.slides) {
       this.carouselInner.innerHTML += '<div class="carousel__slide" data-id=' + slideEl.id + '>' +
-        '<img src="../../assets/images/carousel/' + slideEl.image + '" class="carousel__img" alt="slide">' +
+        '<img src="../assets/images/carousel/' + slideEl.image + '" class="carousel__img" alt="slide">' +
         '<div class="carousel__caption">' +
         '<span class="carousel__price">€' + slideEl.price.toFixed(2) + '</span>' +
         '<div class="carousel__title">' + slideEl.name + '</div>' +
         '<button type="button" class="carousel__button">' +
-        '<img src="../../assets/images/icons/plus-icon.svg" alt="icon">' +
+        '<img src="../assets/images/icons/plus-icon.svg" alt="icon">' +
         '</button>' +
         '</div>' +
         '</div>';
